@@ -5,7 +5,7 @@
 
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--papel);color:var(--tinta);font:400 1.125rem/1.6 "Newsreader",Georgia,serif;overflow-x:clip;
+body{margin:0;background:var(--papel);color:var(--tinta);font:400 1.125rem/1.6 var(--f-texto,"Newsreader"),Georgia,serif;overflow-x:clip;
   background-image:url(texturas/grano.png);background-blend-mode:multiply}
 img,svg{display:block;max-width:100%}
 a{color:inherit}
@@ -13,7 +13,7 @@ p{margin:0 0 .9em}
 [id]{scroll-margin-top:70px}
 .vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 :focus-visible{outline:3px solid var(--acento2);outline-offset:3px;border-radius:4px}
-.mano{display:inline-block;height:1em;vertical-align:-.18em;fill:currentColor;overflow:visible}
+.mano{display:inline-block;height:1em;font-size:calc(1em * var(--mano-escala,1));vertical-align:-.18em;fill:currentColor;overflow:visible}
 .envuelve{width:min(1120px,100% - 32px);margin-inline:auto}
 .ico{width:1.6em;height:1.6em;flex:none}
 
@@ -196,3 +196,38 @@ dialog.carta small{opacity:.7}
 .pista:focus-visible{outline:3px solid var(--acento2)}
 .pista .n{display:inline-block;min-width:2.2em;opacity:.7;font-variant-numeric:tabular-nums}
 .reproductor{margin-top:20px}.reproductor iframe{width:100%;height:152px;border:0;border-radius:12px}
+
+/* banda: una foto a todo lo ancho con una frase a mano */
+.banda{position:relative;min-height:min(78vh,640px);display:grid;align-items:end;color:var(--claro);overflow:hidden;isolation:isolate}
+.banda img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.banda::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 30%,var(--sombra) 100%)}
+.banda blockquote{margin:0 auto;padding:0 0 clamp(40px,8vh,90px)}
+.banda p{font-size:clamp(2rem,5vw,3.6rem);line-height:1.15;margin:0;max-width:22ch;filter:drop-shadow(0 2px 10px rgba(0,0,0,.5))}
+.banda cite{display:block;margin-top:14px;font-style:italic;opacity:.9}
+/* mosaico: galería tipo muro de revista */
+.mosaico{list-style:none;margin:0;padding:0;columns:3 260px;column-gap:18px}
+.mosaico li{break-inside:avoid;margin:0 0 18px}
+.mosaico button{all:unset;cursor:zoom-in;display:block;background:#fff;padding:8px;box-shadow:0 10px 24px rgba(0,0,0,.14);transition:transform .25s}
+.mosaico li:nth-child(4n+1) button{transform:rotate(-.8deg)}.mosaico li:nth-child(4n+3) button{transform:rotate(.9deg)}
+.mosaico button:hover{transform:rotate(0) scale(1.02)}
+.mosaico button:focus-visible{outline:3px solid var(--acento2)}
+.mosaico img{width:100%;height:auto}
+/* en números */
+.numeros{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:20px}
+.numeros li{border:2px dashed var(--medio);border-radius:16px;padding:22px 18px;text-align:center;background:var(--claro);transform:rotate(-.6deg)}
+.numeros li:nth-child(even){transform:rotate(.7deg)}
+.numeros b{display:block;font-size:clamp(2.2rem,5vw,3rem);line-height:1;color:var(--acento);font-weight:600}
+.numeros span{display:block;margin-top:8px;font-size:1rem}
+.nota-n{margin-top:14px;font-size:.85rem;opacity:.7;text-align:center}
+/* sígueme: tira de sus publicaciones */
+.sigueme{display:block;text-decoration:none;text-align:center}
+.sigueme ul{list-style:none;margin:0 0 22px;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.sigueme li img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:6px;transition:transform .25s}
+.sigueme:hover li img{transform:translateY(-3px)}
+@media (max-width:720px){.sigueme ul{grid-template-columns:repeat(3,1fr)}}
+
+/* fuente de cartel por artista (--f-display) */
+.portada .etiqueta,.numeros b,.recortes b,.boton,.redes a,.banda cite,.libreta cite,.marco figcaption,.pie .pilsi b,.cartel p,.pista{font-family:var(--f-display)}
+.portada .etiqueta{font-style:normal;letter-spacing:.02em}
+
+.aviso .boton{font-family:var(--f-texto)}
