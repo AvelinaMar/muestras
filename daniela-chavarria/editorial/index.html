@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es" data-plantilla="editorial"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daniela Chavarría · desarrollo visual e ilustración · página de muestra</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Página de muestra con la obra de Daniela Chavarría: desarrollo visual e ilustración en Monterrey.">
+<meta name="theme-color" content="#efebe3">
+<meta property="og:type" content="website"><meta property="og:locale" content="es_MX">
+<meta property="og:title" content="Daniela Chavarría · página de muestra"><meta property="og:description" content="Página de muestra con la obra de Daniela Chavarría: desarrollo visual e ilustración en Monterrey.">
+<meta property="og:url" content="https://avelinamar.github.io/muestras/daniela-chavarria/"><meta property="og:image" content="https://avelinamar.github.io/muestras/daniela-chavarria/img/tarjeta.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../img/icono-32.png" sizes="32x32"><link rel="apple-touch-icon" href="../img/icono-180.png">
+<link rel="preload" href="../img/p02-e-hero-1800.webp" as="image" fetchpriority="high">
+<style>@font-face{font-family:"F-display";src:url(../../_comun/fuentes/bodonimoda.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap}@font-face{font-family:"F-display";src:url(../../_comun/fuentes/bodonimoda-italic.woff2) format("woff2");font-weight:100 900;font-style:italic;font-display:swap}@font-face{font-family:"F-texto";src:url(../../_comun/fuentes/schibstedgrotesk.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap}:root{--fondo:#efebe3;--tinta:#1a1714;--suave:#5f5850;--linea:#1a1714;--acento:#d4236a;--acento2:#f2a516}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:4rem}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:400 1.02rem/1.65 "F-texto",system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.caja{width:min(100% - 2rem, 1240px);margin-inline:auto}
+:focus-visible{outline:2px solid var(--acento);outline-offset:3px}
+.aviso{position:relative;z-index:50;display:flex;gap:.8rem 1.2rem;align-items:center;justify-content:center;flex-wrap:wrap;padding:.55rem 1rem;background:#111;color:#f3f1ec;font:500 .82rem/1.35 "F-texto",system-ui,sans-serif;text-align:center}
+.aviso small{opacity:.7}
+.aviso a{background:#f3f1ec;color:#111;text-decoration:none;padding:.35rem .8rem;border-radius:99px;font-weight:600;white-space:nowrap}
+.pie{padding:4rem 0 3rem;border-top:1px solid var(--linea);font-size:.86rem;color:var(--suave)}
+.pie .pilsi{display:flex;gap:1rem 2rem;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:1.4rem 1.6rem;border:1px solid var(--linea);border-radius:14px;margin-bottom:2rem;color:var(--tinta)}
+.pie .pilsi p{margin:0}
+.pie .pilsi a{padding:.65rem 1.2rem;border-radius:99px;background:var(--tinta);color:var(--fondo);text-decoration:none;font-weight:600}
+.visor{border:0;padding:0;background:transparent;max-width:96vw;max-height:94vh}
+.visor::backdrop{background:rgba(8,8,10,.92)}
+.visor img{max-width:96vw;max-height:94vh;object-fit:contain}
+.visor .cerrar{position:fixed;top:1rem;right:1.2rem;color:#fff;font-size:2.2rem;line-height:1}
+[data-grande]{cursor:zoom-in}
+.video button{position:relative;display:block;width:100%;aspect-ratio:16/9;overflow:hidden;background:#000}
+.video img,.video iframe{width:100%;height:100%;object-fit:cover;border:0}
+.video .play{position:absolute;inset:50% auto auto 50%;width:68px;height:68px;margin:-34px 0 0 -34px;border-radius:50%;background:rgba(255,255,255,.92);transition:transform .25s}
+.video .play::after{content:"";position:absolute;left:27px;top:21px;border-left:20px solid #111;border-top:13px solid transparent;border-bottom:13px solid transparent}
+.video button:hover .play{transform:scale(1.08)}
+.video figcaption{margin-top:.6rem;font-size:.86rem;color:var(--suave)}
+html.js:not(.captura) .revela{opacity:0;transform:translateY(24px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+html.js .revela.si{opacity:1;transform:none}
+.firma{display:block;background:currentColor;-webkit-mask-size:contain;mask-size:contain;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.revela{opacity:1;transform:none}html{scroll-behavior:auto}}
+
+.e-cab{border-bottom:1px solid var(--linea);font:600 .72rem/1 "F-texto";letter-spacing:.14em;text-transform:uppercase}
+.e-cab .caja{display:flex;gap:1.5rem;align-items:center;height:3rem}.e-cab nav{margin-left:auto;display:flex;gap:1.4rem}.e-cab a{text-decoration:none}
+.e-portada{padding-top:clamp(1.5rem,4vw,3rem)}
+.e-portada h1{margin:0;font:400 clamp(3.4rem,15.5vw,15rem)/.82 "F-display",serif;letter-spacing:-.035em;border-bottom:2px solid var(--tinta);padding-bottom:.08em;overflow-wrap:anywhere}
+.e-port{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(1.5rem,4vw,3.5rem);padding-top:clamp(1.5rem,3vw,2.5rem)}
+.e-port figure{margin:0}.e-port figure img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.e-etq{margin:0 0 1.6rem;font:italic 400 clamp(1.5rem,2.8vw,2.3rem)/1.15 "F-display",serif}
+.e-cols p{margin:0 0 1em;font-size:.98rem}.e-cols p:first-child::first-letter{float:left;font:400 4.6em/.8 "F-display",serif;margin:.06em .1em 0 0;color:var(--acento)}
+.e-sec{padding-top:clamp(4rem,9vw,7rem)}
+.e-h{display:flex;align-items:baseline;gap:1rem;margin:0 0 2rem;padding-top:.8rem;border-top:2px solid var(--tinta);font:400 clamp(2.2rem,6vw,4.6rem)/1 "F-display",serif;letter-spacing:-.02em}
+.e-h span{font:600 .8rem/1 "F-texto";letter-spacing:.12em;color:var(--acento)}
+.e-trio{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(1rem,2.5vw,2rem);margin-bottom:clamp(2rem,5vw,4rem);align-items:end}
+.e-trio figure{margin:0}.e-trio img{width:100%;object-fit:cover}
+.e-n3 .e-f0{grid-column:1/6}.e-n3 .e-f1{grid-column:7/13;margin-bottom:6vw}.e-n3 .e-f2{grid-column:3/10}
+.e-n2 .e-f0{grid-column:1/7}.e-n2 .e-f1{grid-column:8/13}
+.e-n1 .e-f0{grid-column:2/12}
+.e-trio:nth-child(odd of .e-trio) .e-f0{order:0}
+.e-trio figcaption{margin-top:.5rem;font-size:.78rem;color:var(--suave);font-style:italic}
+.e-cita{margin-top:clamp(4rem,9vw,7rem);padding:clamp(4rem,10vw,8rem) 0;background:var(--tinta);color:var(--fondo)}
+.e-cita blockquote{margin:0;font:italic 400 clamp(2.2rem,6.5vw,5.6rem)/1.02 "F-display",serif;letter-spacing:-.02em;max-width:18ch}
+.e-cita blockquote::before{content:"“";color:var(--acento)}
+.e-cita cite{display:block;margin-top:1.6rem;font:600 .8rem/1 "F-texto";letter-spacing:.14em;text-transform:uppercase;font-style:normal}
+.e-videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem}
+.e-ofrece{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 2.5rem}
+.e-ofrece li{padding:1.4rem 0;border-bottom:1px solid color-mix(in srgb,var(--tinta) 25%,transparent)}
+.e-ofrece span{font:600 .74rem/1 "F-texto";color:var(--acento);letter-spacing:.1em}
+.e-ofrece h3{margin:.5rem 0;font:400 1.9rem/1.05 "F-display",serif}.e-ofrece p{margin:0;font-size:.94rem;color:var(--suave)}
+.e-nums{list-style:none;margin:0 0 2.5rem;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem}
+.e-nums b{display:block;font:400 clamp(3rem,7vw,5.5rem)/1 "F-display",serif;color:var(--acento)}.e-nums span{font-size:.88rem;color:var(--suave)}
+.e-tray{list-style:none;margin:0;padding:0;columns:2 300px;column-gap:3rem}
+.e-tray li{break-inside:avoid;padding:.8rem 0;border-bottom:1px solid color-mix(in srgb,var(--tinta) 20%,transparent)}
+.e-tray b{display:block;font-weight:600}.e-tray span{font-size:.88rem;color:var(--suave)}
+.e-fin{margin-top:clamp(4rem,9vw,7rem);padding:clamp(4rem,9vw,7rem) 0;border-top:2px solid var(--tinta)}
+.e-fin h2{margin:0;font:400 clamp(3.4rem,13vw,11rem)/.85 "F-display",serif;letter-spacing:-.035em}
+.e-fin a{font:600 1rem/1 "F-texto"}.e-fin>.caja>a{display:inline-block;margin-top:2rem;padding:1rem 1.6rem;background:var(--acento);color:#fff;text-decoration:none}
+.e-fin ul{list-style:none;padding:0;margin:2rem 0 0;display:flex;gap:1.5rem;flex-wrap:wrap}
+@media (max-width:800px){.e-port{grid-template-columns:1fr}.e-trio{grid-template-columns:1fr}.e-trio figure{grid-column:1/-1!important;margin:0!important}.e-cab span:first-child{display:none}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Daniela Chavarría", "description": "desarrollo visual e ilustración en Monterrey", "sameAs": ["https://www.instagram.com/dibujosdedaniela/", "https://www.artstation.com/dibujosdedaniela", "https://dibujosdedaniela.myportfolio.com/", "https://www.linkedin.com/in/daniela-chavarria-2a676b203/"]}</script>
+</head><body>
+<div class="aviso" role="note"><span>Página de muestra hecha por <b>Pilsi</b> para Daniela Chavarría. <small>Vigente hasta el 10 de diciembre de 2026.</small></span>
+<a href="https://wa.me/526341130286?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20muestra%20de%20Daniela%20Chavarr%C3%ADa%20en%20Pilsi%20y%20me%20interesa." rel="noopener" target="_blank">Quiero esta página</a></div>
+<header class="e-cab"><div class="caja"><span>Núm. 01</span><span>Monterrey · noviembre 2026</span><nav aria-label="Menú"><a href="#obra">Obra</a><a href="#sobre">Sobre</a><a href="#contacto">Contacto</a></nav></div></header>
+<main>
+<section class="e-portada caja"><h1>Daniela Chavarría</h1>
+<div class="e-port"><figure><img src="../img/p02-e-hero-1800.webp" srcset="../img/p02-e-hero-900.webp 615w, ../img/p02-e-hero-1800.webp 615w" sizes="(max-width:900px) 100vw, 55vw" width="615" height="821" alt="Fondo de Daniela Chavarría: una plaza con iglesia y palmeras al atardecer" fetchpriority="high" decoding="async"></figure><div class="e-lead"><p class="e-etq">desarrollo visual e ilustración en Monterrey</p><div class="e-cols" id="sobre"><h2 class="vh">Sobre mí</h2><p>Soy Daniela Chavarría, artista de desarrollo visual e ilustradora en México.</p><p>Me apasiona crear propuestas visuales nuevas, inspiradas en mi cultura brillante, colorida y rica, para proyectos que me reten.</p><p>Estudié Animación en la Universidad de Monterrey (UDEM) y terminé el segundo año de la maestría en Visual Development de IDEA Academy, en Roma.</p></div></div></div></section>
+<section class="caja e-sec" id="obra"><h2 class="e-h"><span>01</span>Obra</h2><div class="e-trio e-n3"><figure class="revela e-f0"><button type="button" data-grande="../img/p14-e0-1400.webp"><img src="../img/p14-e0-1400.webp" srcset="../img/p14-e0-640.webp 640w, ../img/p14-e0-1400.webp 864w" sizes="(max-width:800px) 100vw, 45vw" width="864" height="1080" alt="Ilustración de nadadoras sincronizadas formando una flor en una alberca azul" loading="lazy" decoding="async"></button><figcaption>Ilustración de nadadoras sincronizadas formando una flor en una alberca azul</figcaption></figure><figure class="revela e-f1"><button type="button" data-grande="../img/p08-e1-1400.webp"><img src="../img/p08-e1-1400.webp" srcset="../img/p08-e1-640.webp 640w, ../img/p08-e1-1400.webp 669w" sizes="(max-width:800px) 100vw, 45vw" width="669" height="892" alt="Fondo nocturno de una ciudad junto a un río, con un reloj iluminado" loading="lazy" decoding="async"></button><figcaption>Fondo nocturno de una ciudad junto a un río, con un reloj iluminado</figcaption></figure><figure class="revela e-f2"><button type="button" data-grande="../img/p03-e2-1400.webp"><img src="../img/p03-e2-1400.webp" srcset="../img/p03-e2-640.webp 640w, ../img/p03-e2-1400.webp 804w" sizes="(max-width:800px) 100vw, 45vw" width="804" height="804" alt="Fondo de un avión cruzando un cielo violeta y dorado" loading="lazy" decoding="async"></button><figcaption>Fondo de un avión cruzando un cielo violeta y dorado</figcaption></figure></div><div class="e-trio e-n3"><figure class="revela e-f0"><button type="button" data-grande="../img/p13-e0-1400.webp"><img src="../img/p13-e0-1400.webp" srcset="../img/p13-e0-640.webp 640w, ../img/p13-e0-1400.webp 864w" sizes="(max-width:800px) 100vw, 45vw" width="864" height="1080" alt="Escena nocturna con una figura vestida de blanco bajo dos luces" loading="lazy" decoding="async"></button><figcaption>Escena nocturna con una figura vestida de blanco bajo dos luces</figcaption></figure><figure class="revela e-f1"><button type="button" data-grande="../img/p07-e1-1400.webp"><img src="../img/p07-e1-1400.webp" srcset="../img/p07-e1-640.webp 640w, ../img/p07-e1-1400.webp 1400w" sizes="(max-width:800px) 100vw, 45vw" width="1400" height="1867" alt="Personaje con sombrero de charro y vestido bordado" loading="lazy" decoding="async"></button><figcaption>Personaje con sombrero de charro y vestido bordado</figcaption></figure><figure class="revela e-f2"><button type="button" data-grande="../img/p10-e2-1400.webp"><img src="../img/p10-e2-1400.webp" srcset="../img/p10-e2-640.webp 640w, ../img/p10-e2-1400.webp 1400w" sizes="(max-width:800px) 100vw, 45vw" width="1400" height="1400" alt="Virgen de Guadalupe con rayos amarillos y la frase «mexicana hermosa»" loading="lazy" decoding="async"></button><figcaption>Virgen de Guadalupe con rayos amarillos y la frase «mexicana hermosa»</figcaption></figure></div><div class="e-trio e-n3"><figure class="revela e-f0"><button type="button" data-grande="../img/p11-e0-1400.webp"><img src="../img/p11-e0-1400.webp" srcset="../img/p11-e0-640.webp 640w, ../img/p11-e0-1400.webp 810w" sizes="(max-width:800px) 100vw, 45vw" width="810" height="1013" alt="Tres personajes con trajes tradicionales mexicanos" loading="lazy" decoding="async"></button><figcaption>Tres personajes con trajes tradicionales mexicanos</figcaption></figure><figure class="revela e-f1"><button type="button" data-grande="../img/p17-e1-1400.webp"><img src="../img/p17-e1-1400.webp" srcset="../img/p17-e1-640.webp 640w, ../img/p17-e1-1400.webp 1400w" sizes="(max-width:800px) 100vw, 45vw" width="1400" height="1867" alt="Dos personajes pelirrojos, de frente, con ropa de cuadros" loading="lazy" decoding="async"></button><figcaption>Dos personajes pelirrojos, de frente, con ropa de cuadros</figcaption></figure><figure class="revela e-f2"><button type="button" data-grande="../img/p09-e2-1400.webp"><img src="../img/p09-e2-1400.webp" srcset="../img/p09-e2-640.webp 640w, ../img/p09-e2-1400.webp 1080w" sizes="(max-width:800px) 100vw, 45vw" width="1080" height="1080" alt="Fachada pintada con letras de «Más tequila» y cortinas de flecos" loading="lazy" decoding="async"></button><figcaption>Fachada pintada con letras de «Más tequila» y cortinas de flecos</figcaption></figure></div><div class="e-trio e-n3"><figure class="revela e-f0"><button type="button" data-grande="../img/p05-e0-1400.webp"><img src="../img/p05-e0-1400.webp" srcset="../img/p05-e0-640.webp 640w, ../img/p05-e0-1400.webp 642w" sizes="(max-width:800px) 100vw, 45vw" width="642" height="803" alt="Fondo oscuro de una selva con luces de neón" loading="lazy" decoding="async"></button><figcaption>Fondo oscuro de una selva con luces de neón</figcaption></figure><figure class="revela e-f1"><button type="button" data-grande="../img/p04-e1-1400.webp"><img src="../img/p04-e1-1400.webp" srcset="../img/p04-e1-640.webp 603w, ../img/p04-e1-1400.webp 603w" sizes="(max-width:800px) 100vw, 45vw" width="603" height="804" alt="Avión azul dejando una estela en un cielo lila" loading="lazy" decoding="async"></button><figcaption>Avión azul dejando una estela en un cielo lila</figcaption></figure><figure class="revela e-f2"><button type="button" data-grande="../img/p16-e2-1400.webp"><img src="../img/p16-e2-1400.webp" srcset="../img/p16-e2-640.webp 640w, ../img/p16-e2-1400.webp 887w" sizes="(max-width:800px) 100vw, 45vw" width="887" height="887" alt="Fondo en blanco y negro de una cruz y una figura con vela" loading="lazy" decoding="async"></button><figcaption>Fondo en blanco y negro de una cruz y una figura con vela</figcaption></figure></div><div class="e-trio e-n1"><figure class="revela e-f0"><button type="button" data-grande="../img/p18-e0-1400.webp"><img src="../img/p18-e0-1400.webp" srcset="../img/p18-e0-640.webp 640w, ../img/p18-e0-1400.webp 1303w" sizes="(max-width:800px) 100vw, 45vw" width="1303" height="869" alt="Estudio de valores en gris de un interior con columnas" loading="lazy" decoding="async"></button><figcaption>Estudio de valores en gris de un interior con columnas</figcaption></figure></div></section><section class="e-cita"><div class="caja"><blockquote class="revela">Propuestas visuales inspiradas en mi cultura: brillante, colorida y rica.</blockquote><cite>— Daniela Chavarría</cite></div></section><section class="caja e-sec"><h2 class="e-h"><span>02</span>Lo que hago</h2><ol class="e-ofrece"><li><span>01</span><h3>Desarrollo visual</h3><p>Mundos, paletas y ambientes para animación.</p></li><li><span>02</span><h3>Fondos</h3><p>Escenarios de día y de noche, pensados para la pantalla.</p></li><li><span>03</span><h3>Ilustración</h3><p>Personajes y piezas con todo el color de lo mexicano.</p></li></ol></section><section class="caja e-sec"><h2 class="e-h"><span>03</span>Trayectoria</h2><ul class=e-tray><li><b>Animación (BFA)</b><span>Universidad de Monterrey</span></li><li><b>Maestría en Visual Development</b><span>IDEA Academy, Roma</span></li><li><b>Directora de arte</b><span>Fotosíntesis Media</span></li></ul></section>
+<section class="e-fin" id="contacto"><div class="caja"><h2>Escríbeme.</h2><a href="mailto:danielachavarria2099@gmail.com">Mandar un mensaje →</a><ul><li><a href="https://www.instagram.com/dibujosdedaniela/" rel="noopener me" target="_blank">Instagram</a></li><li><a href="https://www.artstation.com/dibujosdedaniela" rel="noopener me" target="_blank">ArtStation</a></li><li><a href="https://dibujosdedaniela.myportfolio.com/" rel="noopener me" target="_blank">Portafolio</a></li><li><a href="https://www.linkedin.com/in/daniela-chavarria-2a676b203/" rel="noopener me" target="_blank">LinkedIn</a></li></ul></div></section>
+</main>
+<footer class="pie"><div class="caja">
+<div class="pilsi"><p><b>¿Eres artista?</b> Haz tu perfil gratis en Pilsi y que te encuentren para trabajar.</p><a href="https://pilsi.art/auth" rel="noopener">Haz tu perfil gratis</a></div>
+<p>Toda la obra es de Daniela Chavarría y se tomó de su portafolio público. El diseño de esta página es de Pilsi.</p>
+<p><small>Página de muestra hecha por Pilsi para Daniela Chavarría, vigente hasta el 10 de diciembre de 2026. No es su sitio oficial. Si eres Daniela y no quieres esta muestra, escríbenos a <a href="mailto:info@pilsi.art">info@pilsi.art</a> y la quitamos. <a href="https://pilsi.art/privacidad">Aviso de privacidad</a>.</small></p>
+</div></footer>
+<dialog class="visor" id="visor" aria-label="Imagen ampliada"><button class="cerrar" type="button" aria-label="Cerrar">×</button><img alt=""></dialog>
+<script>
+(()=>{document.documentElement.classList.add("js");if(location.hash=="#captura"){document.documentElement.classList.add("captura");document.querySelectorAll("img[loading=lazy]").forEach(i=>i.loading="eager")}
+const v=document.getElementById("visor"),vi=v.querySelector("img");
+document.addEventListener("click",ev=>{const g=ev.target.closest("[data-grande]");if(g){vi.src=g.dataset.grande;vi.alt=g.querySelector("img")?.alt||"";v.showModal();return}
+if(ev.target.closest(".cerrar")||ev.target===v){v.close();return}
+const y=ev.target.closest("[data-yt]");if(y){y.outerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${y.dataset.yt}?autoplay=1" title="Video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen style="width:100%;aspect-ratio:16/9;border:0"></iframe>`;return}
+const s=ev.target.closest("[data-spotify]");if(s){const r=document.querySelector(".reproductor");const id=s.dataset.spotify.split("/").pop().split("?")[0];r.hidden=false;r.innerHTML=`<iframe src="https://open.spotify.com/embed/track/${id}" title="Spotify" height="152" style="width:100%;border:0;border-radius:12px" allow="encrypted-media"></iframe>`}});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("si");io.unobserve(x.target)}}),{rootMargin:"0px 0px -8% 0px"});
+document.querySelectorAll(".revela").forEach(n=>io.observe(n));})();
+</script>
+</body></html>
