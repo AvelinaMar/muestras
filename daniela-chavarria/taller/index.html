@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es" data-plantilla="taller"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daniela Chavarría · desarrollo visual e ilustración · página de muestra</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Página de muestra con la obra de Daniela Chavarría: desarrollo visual e ilustración en Monterrey.">
+<meta name="theme-color" content="#f3ece1">
+<meta property="og:type" content="website"><meta property="og:locale" content="es_MX">
+<meta property="og:title" content="Daniela Chavarría · página de muestra"><meta property="og:description" content="Página de muestra con la obra de Daniela Chavarría: desarrollo visual e ilustración en Monterrey.">
+<meta property="og:url" content="https://avelinamar.github.io/muestras/daniela-chavarria/"><meta property="og:image" content="https://avelinamar.github.io/muestras/daniela-chavarria/img/tarjeta.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../img/icono-32.png" sizes="32x32"><link rel="apple-touch-icon" href="../img/icono-180.png">
+<link rel="preload" href="../img/p02-t-hero-1800.webp" as="image" fetchpriority="high">
+<style>@font-face{font-family:"F-display";src:url(../../_comun/fuentes/youngserif-regular.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap}@font-face{font-family:"F-texto";src:url(../../_comun/fuentes/instrumentsans.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap}:root{--fondo:#f3ece1;--tinta:#2b2118;--suave:#7a6a58;--linea:#d9cbb6;--acento:#d4236a;--acento2:#f2a516}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:4rem}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:400 1.02rem/1.65 "F-texto",system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.caja{width:min(100% - 2rem, 1240px);margin-inline:auto}
+:focus-visible{outline:2px solid var(--acento);outline-offset:3px}
+.aviso{position:relative;z-index:50;display:flex;gap:.8rem 1.2rem;align-items:center;justify-content:center;flex-wrap:wrap;padding:.55rem 1rem;background:#111;color:#f3f1ec;font:500 .82rem/1.35 "F-texto",system-ui,sans-serif;text-align:center}
+.aviso small{opacity:.7}
+.aviso a{background:#f3f1ec;color:#111;text-decoration:none;padding:.35rem .8rem;border-radius:99px;font-weight:600;white-space:nowrap}
+.pie{padding:4rem 0 3rem;border-top:1px solid var(--linea);font-size:.86rem;color:var(--suave)}
+.pie .pilsi{display:flex;gap:1rem 2rem;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:1.4rem 1.6rem;border:1px solid var(--linea);border-radius:14px;margin-bottom:2rem;color:var(--tinta)}
+.pie .pilsi p{margin:0}
+.pie .pilsi a{padding:.65rem 1.2rem;border-radius:99px;background:var(--tinta);color:var(--fondo);text-decoration:none;font-weight:600}
+.visor{border:0;padding:0;background:transparent;max-width:96vw;max-height:94vh}
+.visor::backdrop{background:rgba(8,8,10,.92)}
+.visor img{max-width:96vw;max-height:94vh;object-fit:contain}
+.visor .cerrar{position:fixed;top:1rem;right:1.2rem;color:#fff;font-size:2.2rem;line-height:1}
+[data-grande]{cursor:zoom-in}
+.video button{position:relative;display:block;width:100%;aspect-ratio:16/9;overflow:hidden;background:#000}
+.video img,.video iframe{width:100%;height:100%;object-fit:cover;border:0}
+.video .play{position:absolute;inset:50% auto auto 50%;width:68px;height:68px;margin:-34px 0 0 -34px;border-radius:50%;background:rgba(255,255,255,.92);transition:transform .25s}
+.video .play::after{content:"";position:absolute;left:27px;top:21px;border-left:20px solid #111;border-top:13px solid transparent;border-bottom:13px solid transparent}
+.video button:hover .play{transform:scale(1.08)}
+.video figcaption{margin-top:.6rem;font-size:.86rem;color:var(--suave)}
+html.js:not(.captura) .revela{opacity:0;transform:translateY(24px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+html.js .revela.si{opacity:1;transform:none}
+.firma{display:block;background:currentColor;-webkit-mask-size:contain;mask-size:contain;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.revela{opacity:1;transform:none}html{scroll-behavior:auto}}
+
+body{background-image:radial-gradient(color-mix(in srgb,var(--tinta) 7%,transparent) 1px,transparent 1px);background-size:5px 5px}
+.t-barra{display:flex;justify-content:space-between;align-items:center;height:4rem;font-weight:500}
+.t-barra>a{font:400 1.3rem/1 "F-display";text-decoration:none}.t-barra nav{display:flex;gap:1.4rem;font-size:.9rem}.t-barra nav a{text-decoration:none}
+.t-hero{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:center;padding:clamp(1.5rem,4vw,3rem) 0}
+.t-etq{margin:0 0 1rem;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--acento)}
+.t-hero h1{margin:0;font:400 clamp(3rem,8vw,6.8rem)/.95 "F-display",serif;letter-spacing:-.02em}
+.t-lead{font-size:1.15rem;color:var(--suave);max-width:34ch}
+.t-boton{display:inline-block;margin-top:1rem;padding:.95rem 1.7rem;border-radius:99px;background:var(--acento);color:#fff;text-decoration:none;font-weight:600}
+.t-arco{margin:0;border-radius:999px 999px 18px 18px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(60,40,20,.45)}
+.t-arco img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.t-sec{padding-top:clamp(4rem,9vw,7rem)}
+.t-sec h2{margin:0 0 2rem;font:400 clamp(2.2rem,5vw,3.8rem)/1 "F-display",serif}
+.t-piezas{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(46%,240px),1fr));gap:clamp(.8rem,2vw,1.6rem)}
+.t-piezas li{transition-delay:var(--d)}
+.t-piezas button{display:block;width:100%;border-radius:18px;overflow:hidden;background:var(--linea)}
+.t-piezas img{width:100%;aspect-ratio:1;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.t-piezas button:hover img{transform:scale(1.05)}
+.t-piezas p{margin:.6rem .2rem 0;font-size:.84rem;color:var(--suave);line-height:1.4}
+.t-banda{position:relative;margin-top:clamp(4rem,9vw,7rem)}.t-banda img{width:100%;aspect-ratio:21/9;object-fit:cover}
+.t-banda blockquote{position:absolute;left:50%;bottom:-2.5rem;transform:translateX(-50%);width:min(90%,760px);margin:0;padding:1.8rem 2.2rem;background:var(--fondo);border-radius:18px;font:400 clamp(1.3rem,2.6vw,2rem)/1.25 "F-display",serif;text-align:center;box-shadow:0 20px 50px -25px rgba(60,40,20,.5)}
+.t-hist{display:grid;grid-template-columns:1fr 2fr;gap:2rem;padding-top:clamp(6rem,12vw,9rem)}.t-hist p{margin-top:0;max-width:62ch}
+.t-tray{list-style:none;padding:0;margin:2rem 0 0}.t-tray li{display:flex;justify-content:space-between;gap:1rem;padding:.7rem 0;border-top:1px dashed var(--linea)}.t-tray span{color:var(--suave);text-align:right}
+.t-videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.6rem}
+.t-of{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.t-of li{padding:1.6rem;border-radius:18px;background:color-mix(in srgb,var(--fondo) 60%,#fff);border:1px solid var(--linea)}
+.t-of h3{margin:0 0 .5rem;font:400 1.45rem/1.1 "F-display",serif}.t-of p{margin:0;color:var(--suave);font-size:.94rem}
+.t-contacto{padding-bottom:6rem}.t-contacto>div{padding:clamp(2rem,6vw,4.5rem);border-radius:28px;background:var(--tinta);color:var(--fondo);text-align:center}
+.t-contacto p{opacity:.75}.t-redes{list-style:none;padding:0;margin:1.8rem 0 0;display:flex;gap:1.4rem;justify-content:center;flex-wrap:wrap}
+@media (max-width:800px){.t-hero,.t-hist{grid-template-columns:1fr}.t-arco{order:-1}.t-barra nav{gap:1rem}.t-banda blockquote{position:static;transform:none;width:auto;margin:1rem;box-shadow:none}.t-hist{padding-top:4rem}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Daniela Chavarría", "description": "desarrollo visual e ilustración en Monterrey", "sameAs": ["https://www.instagram.com/dibujosdedaniela/", "https://www.artstation.com/dibujosdedaniela", "https://dibujosdedaniela.myportfolio.com/", "https://www.linkedin.com/in/daniela-chavarria-2a676b203/"]}</script>
+</head><body>
+<div class="aviso" role="note"><span>Página de muestra hecha por <b>Pilsi</b> para Daniela Chavarría. <small>Vigente hasta el 10 de diciembre de 2026.</small></span>
+<a href="https://wa.me/526341130286?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20muestra%20de%20Daniela%20Chavarr%C3%ADa%20en%20Pilsi%20y%20me%20interesa." rel="noopener" target="_blank">Quiero esta página</a></div>
+<header class="t-barra caja"><a href="#arriba">Daniela Chavarría</a><nav aria-label="Menú"><a href="#piezas">Piezas</a><a href="#historia">Historia</a><a href="#contacto">Contacto</a></nav></header>
+<main id="arriba">
+<section class="t-hero caja"><div class="t-txt"><p class="t-etq">Monterrey</p><h1>Daniela Chavarría</h1><p class="t-lead">desarrollo visual e ilustración en Monterrey</p><a class="t-boton" href="#piezas">Ver piezas</a></div>
+<figure class="t-arco"><img src="../img/p02-t-hero-1800.webp" srcset="../img/p02-t-hero-900.webp 656w, ../img/p02-t-hero-1800.webp 656w" sizes="(max-width:900px) 100vw, 50vw" width="656" height="821" alt="Fondo de Daniela Chavarría: una plaza con iglesia y palmeras al atardecer" fetchpriority="high" decoding="async"></figure></section>
+<section class="caja t-sec" id="piezas"><h2>Piezas</h2><ul class="t-piezas"><li class="revela" style="--d:0ms"><button type="button" data-grande="../img/p14-t-pieza-1200.webp"><img src="../img/p14-t-pieza-1200.webp" srcset="../img/p14-t-pieza-600.webp 600w, ../img/p14-t-pieza-1200.webp 1080w" sizes="(max-width:700px) 50vw, 25vw" width="1080" height="1080" alt="Ilustración de nadadoras sincronizadas formando una flor en una alberca azul" loading="lazy" decoding="async"></button><p>Ilustración de nadadoras sincronizadas formando una flor en una alberca azul</p></li><li class="revela" style="--d:80ms"><button type="button" data-grande="../img/p08-t-pieza-1200.webp"><img src="../img/p08-t-pieza-1200.webp" srcset="../img/p08-t-pieza-600.webp 600w, ../img/p08-t-pieza-1200.webp 892w" sizes="(max-width:700px) 50vw, 25vw" width="892" height="892" alt="Fondo nocturno de una ciudad junto a un río, con un reloj iluminado" loading="lazy" decoding="async"></button><p>Fondo nocturno de una ciudad junto a un río, con un reloj iluminado</p></li><li class="revela" style="--d:160ms"><button type="button" data-grande="../img/p03-t-pieza-1200.webp"><img src="../img/p03-t-pieza-1200.webp" srcset="../img/p03-t-pieza-600.webp 600w, ../img/p03-t-pieza-1200.webp 804w" sizes="(max-width:700px) 50vw, 25vw" width="804" height="804" alt="Fondo de un avión cruzando un cielo violeta y dorado" loading="lazy" decoding="async"></button><p>Fondo de un avión cruzando un cielo violeta y dorado</p></li><li class="revela" style="--d:240ms"><button type="button" data-grande="../img/p13-t-pieza-1200.webp"><img src="../img/p13-t-pieza-1200.webp" srcset="../img/p13-t-pieza-600.webp 600w, ../img/p13-t-pieza-1200.webp 1080w" sizes="(max-width:700px) 50vw, 25vw" width="1080" height="1080" alt="Escena nocturna con una figura vestida de blanco bajo dos luces" loading="lazy" decoding="async"></button><p>Escena nocturna con una figura vestida de blanco bajo dos luces</p></li><li class="revela" style="--d:0ms"><button type="button" data-grande="../img/p07-t-pieza-1200.webp"><img src="../img/p07-t-pieza-1200.webp" srcset="../img/p07-t-pieza-600.webp 600w, ../img/p07-t-pieza-1200.webp 1200w" sizes="(max-width:700px) 50vw, 25vw" width="1200" height="1200" alt="Personaje con sombrero de charro y vestido bordado" loading="lazy" decoding="async"></button><p>Personaje con sombrero de charro y vestido bordado</p></li><li class="revela" style="--d:80ms"><button type="button" data-grande="../img/p10-t-pieza-1200.webp"><img src="../img/p10-t-pieza-1200.webp" srcset="../img/p10-t-pieza-600.webp 600w, ../img/p10-t-pieza-1200.webp 1200w" sizes="(max-width:700px) 50vw, 25vw" width="1200" height="1200" alt="Virgen de Guadalupe con rayos amarillos y la frase «mexicana hermosa»" loading="lazy" decoding="async"></button><p>Virgen de Guadalupe con rayos amarillos y la frase «mexicana hermosa»</p></li><li class="revela" style="--d:160ms"><button type="button" data-grande="../img/p11-t-pieza-1200.webp"><img src="../img/p11-t-pieza-1200.webp" srcset="../img/p11-t-pieza-600.webp 600w, ../img/p11-t-pieza-1200.webp 1013w" sizes="(max-width:700px) 50vw, 25vw" width="1013" height="1013" alt="Tres personajes con trajes tradicionales mexicanos" loading="lazy" decoding="async"></button><p>Tres personajes con trajes tradicionales mexicanos</p></li><li class="revela" style="--d:240ms"><button type="button" data-grande="../img/p17-t-pieza-1200.webp"><img src="../img/p17-t-pieza-1200.webp" srcset="../img/p17-t-pieza-600.webp 600w, ../img/p17-t-pieza-1200.webp 1200w" sizes="(max-width:700px) 50vw, 25vw" width="1200" height="1200" alt="Dos personajes pelirrojos, de frente, con ropa de cuadros" loading="lazy" decoding="async"></button><p>Dos personajes pelirrojos, de frente, con ropa de cuadros</p></li><li class="revela" style="--d:0ms"><button type="button" data-grande="../img/p09-t-pieza-1200.webp"><img src="../img/p09-t-pieza-1200.webp" srcset="../img/p09-t-pieza-600.webp 600w, ../img/p09-t-pieza-1200.webp 1080w" sizes="(max-width:700px) 50vw, 25vw" width="1080" height="1080" alt="Fachada pintada con letras de «Más tequila» y cortinas de flecos" loading="lazy" decoding="async"></button><p>Fachada pintada con letras de «Más tequila» y cortinas de flecos</p></li><li class="revela" style="--d:80ms"><button type="button" data-grande="../img/p05-t-pieza-1200.webp"><img src="../img/p05-t-pieza-1200.webp" srcset="../img/p05-t-pieza-600.webp 600w, ../img/p05-t-pieza-1200.webp 803w" sizes="(max-width:700px) 50vw, 25vw" width="803" height="803" alt="Fondo oscuro de una selva con luces de neón" loading="lazy" decoding="async"></button><p>Fondo oscuro de una selva con luces de neón</p></li><li class="revela" style="--d:160ms"><button type="button" data-grande="../img/p04-t-pieza-1200.webp"><img src="../img/p04-t-pieza-1200.webp" srcset="../img/p04-t-pieza-600.webp 600w, ../img/p04-t-pieza-1200.webp 804w" sizes="(max-width:700px) 50vw, 25vw" width="804" height="804" alt="Avión azul dejando una estela en un cielo lila" loading="lazy" decoding="async"></button><p>Avión azul dejando una estela en un cielo lila</p></li><li class="revela" style="--d:240ms"><button type="button" data-grande="../img/p16-t-pieza-1200.webp"><img src="../img/p16-t-pieza-1200.webp" srcset="../img/p16-t-pieza-600.webp 600w, ../img/p16-t-pieza-1200.webp 887w" sizes="(max-width:700px) 50vw, 25vw" width="887" height="887" alt="Fondo en blanco y negro de una cruz y una figura con vela" loading="lazy" decoding="async"></button><p>Fondo en blanco y negro de una cruz y una figura con vela</p></li><li class="revela" style="--d:0ms"><button type="button" data-grande="../img/p18-t-pieza-1200.webp"><img src="../img/p18-t-pieza-1200.webp" srcset="../img/p18-t-pieza-600.webp 600w, ../img/p18-t-pieza-1200.webp 869w" sizes="(max-width:700px) 50vw, 25vw" width="869" height="869" alt="Estudio de valores en gris de un interior con columnas" loading="lazy" decoding="async"></button><p>Estudio de valores en gris de un interior con columnas</p></li></ul></section>
+<section class="t-banda"><img src="../img/p03-t-banda-1800.webp" srcset="../img/p03-t-banda-900.webp 900w, ../img/p03-t-banda-1800.webp 1800w" sizes="100vw" width="1800" height="771" alt="Fondo de un avión cruzando un cielo violeta y dorado" loading="lazy" decoding="async"><blockquote>Propuestas visuales inspiradas en mi cultura: brillante, colorida y rica.</blockquote></section>
+<section class="caja t-sec t-hist" id="historia"><h2>Sobre mí</h2><div><p>Soy Daniela Chavarría, artista de desarrollo visual e ilustradora en México.</p><p>Me apasiona crear propuestas visuales nuevas, inspiradas en mi cultura brillante, colorida y rica, para proyectos que me reten.</p><p>Estudié Animación en la Universidad de Monterrey (UDEM) y terminé el segundo año de la maestría en Visual Development de IDEA Academy, en Roma.</p><ul class=t-tray><li><b>Animación (BFA)</b><span>Universidad de Monterrey</span></li><li><b>Maestría en Visual Development</b><span>IDEA Academy, Roma</span></li><li><b>Directora de arte</b><span>Fotosíntesis Media</span></li></ul></div></section>
+
+<section class="caja t-sec"><h2>Lo que hago</h2><ul class="t-of"><li><h3>Desarrollo visual</h3><p>Mundos, paletas y ambientes para animación.</p></li><li><h3>Fondos</h3><p>Escenarios de día y de noche, pensados para la pantalla.</p></li><li><h3>Ilustración</h3><p>Personajes y piezas con todo el color de lo mexicano.</p></li></ul></section>
+<section class="caja t-sec t-contacto" id="contacto"><div><h2>Escríbeme</h2><p>Encargos, pedidos especiales y colaboraciones.</p><a class="t-boton" href="mailto:danielachavarria2099@gmail.com">Mandar mensaje</a><ul class="t-redes"><li><a href="https://www.instagram.com/dibujosdedaniela/" rel="noopener me" target="_blank">Instagram</a></li><li><a href="https://www.artstation.com/dibujosdedaniela" rel="noopener me" target="_blank">ArtStation</a></li><li><a href="https://dibujosdedaniela.myportfolio.com/" rel="noopener me" target="_blank">Portafolio</a></li><li><a href="https://www.linkedin.com/in/daniela-chavarria-2a676b203/" rel="noopener me" target="_blank">LinkedIn</a></li></ul></div></section>
+</main>
+<footer class="pie"><div class="caja">
+<div class="pilsi"><p><b>¿Eres artista?</b> Haz tu perfil gratis en Pilsi y que te encuentren para trabajar.</p><a href="https://pilsi.art/auth" rel="noopener">Haz tu perfil gratis</a></div>
+<p>Toda la obra es de Daniela Chavarría y se tomó de su portafolio público. El diseño de esta página es de Pilsi.</p>
+<p><small>Página de muestra hecha por Pilsi para Daniela Chavarría, vigente hasta el 10 de diciembre de 2026. No es su sitio oficial. Si eres Daniela y no quieres esta muestra, escríbenos a <a href="mailto:info@pilsi.art">info@pilsi.art</a> y la quitamos. <a href="https://pilsi.art/privacidad">Aviso de privacidad</a>.</small></p>
+</div></footer>
+<dialog class="visor" id="visor" aria-label="Imagen ampliada"><button class="cerrar" type="button" aria-label="Cerrar">×</button><img alt=""></dialog>
+<script>
+(()=>{document.documentElement.classList.add("js");if(location.hash=="#captura"){document.documentElement.classList.add("captura");document.querySelectorAll("img[loading=lazy]").forEach(i=>i.loading="eager")}
+const v=document.getElementById("visor"),vi=v.querySelector("img");
+document.addEventListener("click",ev=>{const g=ev.target.closest("[data-grande]");if(g){vi.src=g.dataset.grande;vi.alt=g.querySelector("img")?.alt||"";v.showModal();return}
+if(ev.target.closest(".cerrar")||ev.target===v){v.close();return}
+const y=ev.target.closest("[data-yt]");if(y){y.outerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${y.dataset.yt}?autoplay=1" title="Video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen style="width:100%;aspect-ratio:16/9;border:0"></iframe>`;return}
+const s=ev.target.closest("[data-spotify]");if(s){const r=document.querySelector(".reproductor");const id=s.dataset.spotify.split("/").pop().split("?")[0];r.hidden=false;r.innerHTML=`<iframe src="https://open.spotify.com/embed/track/${id}" title="Spotify" height="152" style="width:100%;border:0;border-radius:12px" allow="encrypted-media"></iframe>`}});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("si");io.unobserve(x.target)}}),{rootMargin:"0px 0px -8% 0px"});
+document.querySelectorAll(".revela").forEach(n=>io.observe(n));})();
+</script>
+</body></html>
